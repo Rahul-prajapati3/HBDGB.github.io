@@ -1,0 +1,53 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+   
+    width: 100%;
+    height: 642px;
+    position: absolute;
+    background: url(../img/bdbg1.jpg) no-repeat center center/cover;
+}
+.container .box{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    margin-top: 200px;
+    margin-left: 250px;
+    align-items: center;
+    justify-content: center;
+    /* margin: 90px 90px; */
+}
+.container .box p{
+  font-size: 35px;
+}
+.box img{
+    width: 300px;
+}
+@media(min-width: 200px) and (max-width:1170px){
+.box img{
+    width: 180px;
+}
+.container{
+   
+    height: 720px;
+}
+.container .box p{
+    font-size: 17px;
+  }
+  .container .box{
+   
+    margin-top: 300px;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="css/video.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png">
+        </div>
+        <ul>
+            <li class="item"><a href="./Surprise.html">Surprise</a></li>
+            <li class="item"><a href="./photos.html">Photos</a></li>
+            <li class="item"><a href="./video.html">Video</a></li>
+            
+        </ul>
+    </nav>
+    
+    
+    <div class="container">
+        <h1 >Video Gallery</h1>
+        <div id="Video">
+           
+            <div class="row">
+                <div class="col">
+                    <div class="feature-img">
+                        <img src="img/vd1.JPG" width="100%">
+                        <img src="img/play.png" class="play-btn" onclick="playVideo('img/vd1.mp4')">
+
+                    </div>
+                    <p>I always wants to be like You 😍.. <br>Why r U so Cute baby 💖</p>
+                </div>
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="img/vd2.jpeg">
+                            <img src="img/play.png" class="play-btn" onclick="playVideo('img/vd2.mp4')">
+
+                        </div>
+                        <p>You r so Innocent 🥰 & Lovely 😋 that <br> everone wants to love U 😍 <br> But no one is allowed 😏 to love U except Me 🙈🙈 </p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="img/vd3.jpeg">
+                            <img src="img/play.png" class="play-btn" onclick="playVideo('img/vd3.mp4')">
+
+                        </div>
+                        <p>No one loves me like U do 🙈❣️..U know everything about me...U know what makes me happy 😃😃 <br> If I would have to live my life again 🌝🌝 it is still only U😍 I will choose to Love💝💝</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="img/vd4.JPG">
+                            <img src="img/play.png" class="play-btn" onclick="playVideo('img/vd4.mp4')">
+
+                        </div>
+                        <p>Whenever U stay with me 🤭 I forget all my pain and my problems 😇 <br>I wish we'll be together forever 😘😘</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="img/vd5.jpeg">
+                            <img src="img/play.png" class="play-btn" onclick="playVideo('img/vd5.mp4')">
+
+                        </div>
+                        <p>Whenever I see U 🥰..I wish that everything should stop😌 & I just keep looking at U 👀</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Video-player" id="videoPlayer">
+                <video width="100%" controls id="myvideo" >
+                    <!-- <source src="img/v1.mp4" type="video/mp4"> -->
+                </video>
+                <img src="img/cls.png" class="close-btn" onclick="stopVideo()">
+            </div>
+        </div>
+    </div> 
+
+
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myvideo = document.getElementById("myvideo");
+        
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+        function playVideo(file){
+            myvideo.src = file;
+            videoPlayer.style.display = "block";
+        
+        }
+       
+        </script>
+
+
+</body>
+</html>
