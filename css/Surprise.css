@@ -82,7 +82,6 @@ html{
     height: 642px;
     width: 100%;
     z-index: -1;
-    opacity: 0.89;
     animation: zoom 40s none infinite ;
 }
 @keyframes zoom{
